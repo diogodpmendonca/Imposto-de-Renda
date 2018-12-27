@@ -8,6 +8,11 @@ public abstract class Contribuinte {
 	public Contribuinte() {
 	}
 	
+	public Contribuinte(String nome, Double renda) {
+		this.nome = nome;
+		this.renda = renda;
+	}
+
 	public String getNome() {
 		return nome;
 	}
@@ -24,11 +29,7 @@ public abstract class Contribuinte {
 		this.renda = renda;
 	}
 
-	public Double impostoDevido() {
-		return 0.00;
-	}
+	public abstract Double impostoDevido();
 	
-	public String demosntrativo() {
-		return "";
-	}
+	public abstract String demosntrativo();
 }

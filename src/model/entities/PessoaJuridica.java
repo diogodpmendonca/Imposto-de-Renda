@@ -4,8 +4,12 @@ public class PessoaJuridica extends Contribuinte{
 	
 	public Integer qtdfuncionarios;
 
-	public PessoaJuridica(Integer qtdfuncionarios) {
+	public PessoaJuridica() {
 		super();
+	}
+
+	public PessoaJuridica(String nome, Double renda, Integer qtdfuncionarios) {
+		super(nome, renda);
 		this.qtdfuncionarios = qtdfuncionarios;
 	}
 

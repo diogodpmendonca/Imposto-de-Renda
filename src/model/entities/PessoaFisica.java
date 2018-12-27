@@ -4,8 +4,12 @@ public class PessoaFisica extends Contribuinte{
 	
 	private Double gastoSaude;
 
-	public PessoaFisica(Double gastoSaude) {
+	public PessoaFisica() {
 		super();
+	}
+	
+	public PessoaFisica(String nome, Double renda, Double gastoSaude) {
+		super(nome, renda);
 		this.gastoSaude = gastoSaude;
 	}
 
@@ -19,10 +23,10 @@ public class PessoaFisica extends Contribuinte{
 	
 	@Override
 	public Double impostoDevido() {
-		if(renda > 20000.00) {
-			return renda * 0.15 - gastoSaude;
+		if(renda < 20000.00) {
+			return renda * 0.15 - gastoSaude * 0.5;
 		}else {
-			return renda * 0.25 - gastoSaude;
+			return renda * 0.25 - gastoSaude * 0.5;
 		}
 	}
 	
