@@ -2,12 +2,12 @@ package model.entities;
 
 public abstract class Contribuinte {
 	
-	private String nome;
-	private Double String;
+	protected String nome;
+	protected Double renda;
 	
 	public Contribuinte() {
 	}
-
+	
 	public String getNome() {
 		return nome;
 	}
@@ -16,16 +16,19 @@ public abstract class Contribuinte {
 		this.nome = nome;
 	}
 
-	public Double getString() {
-		return String;
+	public Double getRenda() {
+		return renda;
 	}
 
-	public void setString(Double string) {
-		String = string;
+	public void setRenda(Double renda) {
+		this.renda = renda;
+	}
+
+	public Double impostoDevido() {
+		return 0.00;
 	}
 	
-	public Double impostoDevido() {
-		
-		return 0.00;
+	public String demosntrativo() {
+		return "";
 	}
 }
