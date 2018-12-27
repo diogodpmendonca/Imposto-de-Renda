@@ -2,11 +2,9 @@ package model.entities;
 
 public abstract class Contribuinte {
 	
-	protected String nome;
-	protected Double renda;
+	private String nome;
+	private Double renda;
 	
-	public Contribuinte() {
-	}
 	
 	public Contribuinte(String nome, Double renda) {
 		this.nome = nome;
