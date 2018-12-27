@@ -1,4 +1,4 @@
-# ordem-de-compra
+# Imposto de Renda
  exercicio 02 de fixação da unidade de herença do curso de java orientado a objetos 
 
 Fazer um programa para ler os dados de N contribuintes (N fornecido pelo usuário), 
